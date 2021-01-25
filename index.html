@@ -1,0 +1,89 @@
+<html>
+  <head>
+      <link href="style.css" rel="stylesheet" type="text/css">
+    <title>convertitore valuta</title>
+  </head>
+  <script>
+    function eurodollaro(){
+        numeroString=document.valuta.textEuroDollaro.value;
+        if(isNaN(numeroString)){
+            alert("Devi inserire un carattere numerico");
+        return;}
+        if(numeroString==""){
+            alert("Non hai inserito nessun numero, perfavore inseriscine uno");
+        return;}
+        numero=parseFloat(numeroString);
+        risult=numero*1.21;
+        document.valuta.textEuroDollaro.value=risult;}
+
+    function dollaroeuro(){
+        numeroString=document.valuta.textDollaroEuro.value;
+        if(isNaN(numeroString)){
+            alert("Devi inserire un carattere numerico");
+        return;}
+        if(numeroString==""){
+            alert("Non hai inserito nessun numero, perfavore inseriscine uno");
+        return;}
+        numero=parseFloat(numeroString);
+        risult=numero*0.82;
+        document.valuta.textDollaroEuro.value=risult;}
+
+    function eurosterlina(){
+        numeroString=document.valuta.textEuroSterlina.value;
+        if(isNaN(numeroString)){
+            alert("Devi inserire un carattere numerico");
+        return;}
+        if(numeroString==""){
+            alert("Non hai inserito nessun numero, perfavore inseriscine uno");
+        return;}
+        numero=parseFloat(numeroString);
+        risult=numero*0.89;
+        document.valuta.textEuroSterlina.value=risult;}
+
+    function sterlinaeuro(){
+        numeroString=document.valuta.textSterlinaEuro.value;
+        if(isNaN(numeroString)){
+            alert("Devi inserire un carattere numerico");
+        return;}
+        if(numeroString==""){
+            alert("Non hai inserito nessun numero, perfavore inseriscine uno");
+        return;}
+        numero=parseFloat(numeroString);
+        risult=numero*1.12;
+        document.valuta.textSterlinaEuro.value=risult;}
+
+ 
+
+
+  </script>
+  <body>
+    <div id="contenitore">
+      <h1> Convertitore di valuta</h1>
+      <h3>Inserisci la quantita' di moneta nei campi per sapere il valore nella valuta desiderata.</h3>
+      <br>
+     <form name="valuta">
+        <h4>dollaro - euro</h4>
+        <div id="spazio1">
+        <input type="text" id="textEuroDollaro" name="inputEuroDollaro" placeholder="euro">
+        <input type="button" id="euroDollaroBottone" name="euroBottone" value="converti da euro a dollaro" onclick="eurodollaro()">
+        </div>
+        <input type="text" id="textDollaroEuro" name="inputDollaroEuro" placeholder="dollaro">
+        <input type="button" id="dollaroEuroBottone" name="euroBottone" value="converti da dollaro ad euro" onclick="dollaroeuro()">     
+    
+    <br>
+    <br>
+	<br>
+        <div id="spazio2">
+        <h4>sterlina - euro</h4>
+        <input type="text" id="textEuroSterlina" name="inputEuroSterlina" placeholder="euro">
+        <input type="button" id="euroSterlinaBottone" name="euroBottone" value="converti da euro a sterlina" onclick="eurosterlina()"> 
+        </div>
+        <input type="text" id="textSterlinaEuro" name="inputSterlinaEuro" placeholder="sterlina">
+        <input type="button" id="sterlinaEuroBottone" name="euroBottone" value="converti da sterlina ad euro" onclick="sterlinaeuro()"> 
+        
+
+    </div>
+	
+     </form>
+  </body>
+</html>

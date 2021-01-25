@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+#spazio1{margin-right:7px;}
+#spazio2{margin-right:7px;}
+
+h3{color:rgb(73, 73, 73);}
+
+#contenitore{border-style:ridge;
+border-color: gray;
+border-radius: 10px;
+background-color: rgb(228, 228, 204);
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+margin-left: 200px;
+margin-right: 200px;
+margin-top:50px;
+font-family: 'Roboto', sans-serif;}
+
